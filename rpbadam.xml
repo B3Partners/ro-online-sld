@@ -1,0 +1,4601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:sld="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld X:\Documentatie\SCHEMAS_OPENGIS_NET\sld\1.1.0\StyledLayerDescriptor.xsd">
+
+	<!--bvg_pde
+		titel: Beheersverordeningen (in procedure) 
+		-->
+	<NamedLayer>
+		<Name>nwro_bvg_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Beheersverordeningen in procedure</Name>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#5CFF60</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>contour_bvg_pde</Name>
+		<UserStyle>
+			<Name>bolletjes-solid</Name>
+			<FeatureTypeStyle> 
+				<Rule>
+					<Name>Beheersverordeningen contour in procedure</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/circle.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>7</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_bvg_vlk_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Beheersverordeningen vlak in procedure</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+	<!--bvg_hdg
+		titel: Beheersverordeningen (huidig) 
+		-->
+	<NamedLayer>
+		<Name>nwro_bvg_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Beheersverordeningen onherroepelijk</Name>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#5CFF60</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>contour_bvg_hdg</Name>
+		<UserStyle>
+			<Name>bolletjes-solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Beheersverordeningen contour onherroepelijk</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/circle.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>7</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_bvg_vlk_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Beheersverordeningen vlak onherroepelijk</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+	<!--pbt_pde
+titel: Projectbesluiten (in procedure) 
+-->
+	<NamedLayer>
+		<Name>nwro_pbt_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Projectbesluit in procedure</Name>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#5CFF60</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>contour_pbt_pde</Name>
+		<UserStyle>
+			<Name>bolletjes-solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Projectbesluit in procedure contour</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/circle.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>7</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_pbt_vlk_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Projectbesluit vlak in procedure</Name>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+	<!--pbt_pde
+titel: Projectbesluiten (huidig) 
+-->
+	<NamedLayer>
+		<Name>nwro_pbt_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Projectbesluit onherroepelijk</Name>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#5CFF60</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>contour_pbt_hdg</Name>
+		<UserStyle>
+			<Name>bolletjes-solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Projectbesluit onherroepelijk contour</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/circle.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>7</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_pbt_vlk_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Projectbesluit vlak onherroepelijk</Name>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+	<!--tog_hdg
+titel: Tijdelijke ontheffingen buitenplans (huidig) 
+-->
+	<NamedLayer>
+		<Name>nwro_tog</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Tijdelijke ontheffing buitenplans</Name>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#C0FF60</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>contour_tog_hdg</Name>
+		<UserStyle>
+			<Name>bolletjes-solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Tijdelijke ontheffing buitenplans contour</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/circle.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>7</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_tog_vlk</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Tijdelijke ontheffing buitenplans vlak</Name>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#0000FF</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+
+	<!--vbt_hdg
+titel: Voorbereidingsbesluiten (huidig) 
+-->
+	<NamedLayer>
+		<Name>nwro_vbt</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Voorbereidingsbesluiten</Name>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#C0FF60</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>contour_vbt_hdg</Name>
+		<UserStyle>
+			<Name>bolletjes-solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Voorbereidingsbesluiten contour</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/circle.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>7</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_vbt_vlk</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Voorbereidingsbesluiten vlak</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+
+	<!--bpn_pde
+titel: Bestemmingsplannen (in procedure)
+-->
+	<NamedLayer>
+		<Name>pre_nwro_bpn_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Gescanned</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>vertaald</PropertyName>
+							<Literal>Bestaand</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFFF90</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Vertaald naar IMRO2003</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>vertaald</PropertyName>
+							<Literal>Ja</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#70A0FF</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>IMRO2003</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>vertaald</PropertyName>
+							<Literal>Nee</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF6060</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_bpn_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>IMRO2006</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>stri</PropertyName>
+							<Literal>STRI2006</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFFF90</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>IMRO2008</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>stri</PropertyName>
+							<Literal>STRI2008</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#C0FF60</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>Contour</Name>
+		<UserStyle>
+			<Name>bolletjes-solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>contour_bpn_pde</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/circle.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>7</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+
+	<!--bpn_hdg
+titel: Bestemmingsplannen (huidig) 
+-->
+	<NamedLayer>
+		<Name>pre_nwro_bpn_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Gescanned</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>vertaald</PropertyName>
+							<Literal>Bestaand</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFFF90</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Vertaald naar IMRO2003</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>vertaald</PropertyName>
+							<Literal>Ja</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#70A0FF</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>IMRO2003</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>vertaald</PropertyName>
+							<Literal>Nee</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF6060</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_bpn_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>IMRO2006</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>stri</PropertyName>
+							<Literal>STRI2006</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFFF90</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>IMRO2008</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>stri</PropertyName>
+							<Literal>STRI2008</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#C0FF60</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>contour_bpn_hdg</Name>
+		<UserStyle>
+			<Name>bolletjes-solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Bestemmingsplangebied contour</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/circle.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>7</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+	<!--adg_pde
+titel: Aanduidingen (in procedure)-->
+	<NamedLayer>
+		<Name>pre_nwro_adg_pde_l</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Aanduidingslijn</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>al</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Dwars- of lengteprofiel</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>dlp</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Scheidingslijn bebouwingswaarden</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>bbl</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Geluidwering</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>gw</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#C000C0</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Verplichte gevellijn</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>vg</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Overig waardevol of beperkingsgebied</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>og</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#00E000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Beschermd stads- of dorpsgezicht</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>bg</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#FFC000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Archeologisch waardevol gebied</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>ag</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#A07800</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Gezoneerd industrieterrein</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>ig</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Geluidzone industrieterrein</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>gi</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#FF00FF</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Scheidingsvlak bebouwingswaarden</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>bbv</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Bouwvlak</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>bv</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">3.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>pre_nwro_adg_pde_v</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Aanduidingsvlak</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>av</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/diagonaalrechts.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Aanduidingsvlak (extra)</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>ave</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/diagonaallinks.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Functie op het water</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>fwa</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/vlakjes.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Waterstaatkundig werk</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>ww</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/slinger.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Ondergronds verkeer</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>ov</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/blokjes.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Onderdoorgang of overbouwing</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>oo</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<Mark>
+										<WellKnownName>x</WellKnownName>
+										<Fill>
+											<SvgParameter name="fill">#000000</SvgParameter>
+										</Fill>
+									</Mark>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_gag_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>geluidzone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>geluidzone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#FF9B00</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spikeFF9B00.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>luchtvaartverkeerzone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>luchtvaartverkeerzone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#9B32CD</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike9632CD.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>milieuzone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>milieuzone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#009B00</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike009B00.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>reconstructiewetzone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>reconstructiewetzone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#38855E</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike38855E.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>veiligheidszone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>veiligheidszone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#0000FF</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike0000FF.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>vrijwaringszone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>vrijwaringszone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#37CD00</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike37CD00.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>wro-zone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>wro-zone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#FF0000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spikeFF0000.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>overig</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>overig</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#646464</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike646464.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_fag_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Functieaanduiding</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_bvk_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Bouwvlak</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">3.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_bag_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Bouwaanduiding</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_mvg_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Maatvoering</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_fgr_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>as van de weg</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>as van de weg</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#999999</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>dwarsprofiel</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>dwarsprofiel</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>gevellijn</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>gevellijn</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>hartlijn leiding</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>hartlijn leiding</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>relatie</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>relatie</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">3.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+
+	<!--adg_hdg
+titel: Aanduidingen (huidig)-->
+	<NamedLayer>
+		<Name>pre_nwro_adg_hdg_l</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Aanduidingslijn</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>al</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Dwars- of lengteprofiel</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>dlp</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Scheidingslijn bebouwingswaarden</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>bbl</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Geluidwering</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>gw</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#C000C0</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Verplichte gevellijn</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>vg</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Overig waardevol of beperkingsgebied</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>og</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#00E000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Beschermd stads- of dorpsgezicht</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>bg</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#FFC000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Archeologisch waardevol gebied</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>ag</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#A07800</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Gezoneerd industrieterrein</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>ig</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Geluidzone industrieterrein</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>gi</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#FF00FF</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Scheidingsvlak bebouwingswaarden</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>bbv</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">4.0</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Bouwvlak</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>bv</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">3.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>pre_nwro_adg_hdg_v</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Aanduidingsvlak</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>av</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/diagonaalrechts.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Aanduidingsvlak (extra)</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>ave</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/diagonaallinks.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Functie op het water</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>fwa</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/vlakjes.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Waterstaatkundig werk</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>ww</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/slinger.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Ondergronds verkeer</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>ov</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/blokjes.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Onderdoorgang of overbouwing</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>cre02</PropertyName>
+							<Literal>oo</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<Mark>
+										<WellKnownName>x</WellKnownName>
+										<Fill>
+											<SvgParameter name="fill">#000000</SvgParameter>
+										</Fill>
+									</Mark>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_gag_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Geluidzone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>geluidzone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#FF9B00</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spikeFF9B00.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>luchtvaartverkeerzone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>luchtvaartverkeerzone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#9B32CD</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike9632CD.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>milieuzone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>milieuzone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#009B00</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike009B00.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>reconstructiewetzone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>reconstructiewetzone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#38855E</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike38855E.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>veiligheidszone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>veiligheidszone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#0000FF</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike0000FF.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>vrijwaringszone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>vrijwaringszone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#37CD00</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike37CD00.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>wro-zone</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>wro-zone</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#FF0000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spikeFF0000.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>overig</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>gebiedsaanduidinggroep</PropertyName>
+							<Literal>overig</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#646464</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<sld:GraphicStroke>
+								<sld:Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/spike646464.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<sld:Size>19</sld:Size>
+								</sld:Graphic>
+							</sld:GraphicStroke>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_fag_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Functieaanduiding</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_bvk_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Bouwvlak</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">3.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_bag_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Bouwaanduiding</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_mvg_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Maatvoering</Name>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_fgr_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>As van de weg</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>as van de weg</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#999999</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>dwarsprofiel</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>dwarsprofiel</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>gevellijn</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>gevellijn</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-dasharray">4 6</SvgParameter> 
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>hartlijn leiding</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>hartlijn leiding</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>relatie</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>relatie</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<LineSymbolizer>
+						<geometry>
+							<PropertyName>geometrie</PropertyName>
+						</geometry>
+						<Stroke>
+							<SvgParameter name="stroke">#ff0000</SvgParameter>
+							<SvgParameter name="stroke-width">3.0</SvgParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+	<!--dbg_pde
+titel: Dubbelbestemmingen (in procedure) 
+-->
+	<NamedLayer>
+		<Name>nwro_dbg_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Leiding</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>leiding</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/blokjes.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Waarde</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>waarde</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/cross.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Waterstaat</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>waterstaat</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/slinger.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+	<!--dbg_hdg
+titel: Dubbelbestemmingen (hdg) 
+-->
+	<NamedLayer>
+		<Name>nwro_dbg_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Leiding</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>leiding</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/blokjes.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Waarde</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>waarde</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/cross.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Waterstaat</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>waterstaat</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#ff0000</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+							<GraphicFill>
+								<Graphic>
+									<sld:ExternalGraphic>
+										<sld:OnlineResource xlink:href="http://localhost/rpbadam/sld-pics/slinger.png"/>
+										<sld:Format>image/png</sld:Format>
+									</sld:ExternalGraphic>
+									<Size>10.0</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">1.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+	<!--bsg_pde
+titel: Bestemmingen (in procedure) 
+	-->
+	<NamedLayer>
+		<Name>pre_nwro_bsg_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Agrarisch</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>A</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#EBF0D2</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Bedrijf</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>B</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#C8A0D7</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+
+				</Rule>
+				<Rule>
+					<Name>Detailhandel</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>DH</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFA096</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Gemengd</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>GD</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFBE87</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Groen</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>G</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#28C846</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Horeca</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>H</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF6923</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Kantoor</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>K</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#EBC3D7</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Maatschappelijk</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>M</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#DC9B78</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Natuur</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>N</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#82A591</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Ontspanning en vermaak</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>OV</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF3C82</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Recreatie</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>R</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#B9D746</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Sport</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>S</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#82C846</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Tuin</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>T</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#C8D76E</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Verkeer</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>V</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#CDCDCD</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Water</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>WA</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#AFCDE1</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Wonen</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>W</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFFF00</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_bsg_pde</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Agrarisch</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>agrarisch</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#EBF0D2</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Agrarisch met waarden</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>agrarisch met waarden</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#D2E1A5</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Bedrijf</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>bedrijf</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#B45FD2</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Bedrijventerrein</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>bedrijventerrein</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#C8A0D7</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Bos</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>bos</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#64AA2D</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Centrum</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>centrum</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFC8BE</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Cultuur en ontspanning</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>cultuur en ontspanning</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF3C82</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Detailhandel</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>detailhandel</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFA096</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Dienstverlening</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>dienstverlening</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#F091BE</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Gemengd</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>gemengd</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFBE87</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Groen</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>groen</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#28C846</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Horeca</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>horeca</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF6923</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Kantoor</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>kantoor</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#EBC3D7</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Maatschappelijk</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>maatschappelijk</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#DC9B78</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Natuur</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>natuur</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#82A591</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Recreatie</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>recreatie</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#B9D746</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Sport</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>sport</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#82C846</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Tuin</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>tuin</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#C8D76E</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Verkeer</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>verkeer</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#CDCDCD</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Water</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>water</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#AFCDE1</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Wonen</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>wonen</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFFF00</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Woongebied</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>woongebied</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFFFB4</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Overig</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>overig</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#EBE1EB</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+
+	<!--bsg_hdg
+titel: Bestemmingen (huidig) 
+	-->
+	<NamedLayer>
+		<Name>pre_nwro_bsg_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Agrarisch</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>A</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#EBF0D2</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Bedrijf</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>B</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#C8A0D7</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+
+				</Rule>
+				<Rule>
+					<Name>Detailhandel</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>DH</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFA096</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Gemengd</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>GD</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFBE87</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Groen</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>G</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#28C846</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Horeca</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>H</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF6923</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Kantoor</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>K</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#EBC3D7</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Maatschappelijk</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>M</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#DC9B78</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Natuur</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>N</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#82A591</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Ontspanning en vermaak</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>OV</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF3C82</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Recreatie</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>R</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#B9D746</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Sport</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>S</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#82C846</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Tuin</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>T</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#C8D76E</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Verkeer</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>V</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#CDCDCD</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Water</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>WA</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#AFCDE1</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Wonen</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>classificatie</PropertyName>
+							<Literal>W</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFFF00</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+	<NamedLayer>
+		<Name>nwro_bsg_hdg</Name>
+		<UserStyle>
+			<Name>solid</Name>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>Agrarisch</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>agrarisch</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#EBF0D2</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Agrarisch met waarden</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>agrarisch met waarden</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#D2E1A5</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Bedrijf</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>bedrijf</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#B45FD2</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Bedrijventerrein</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>bedrijventerrein</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#C8A0D7</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Bos</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>bos</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#64AA2D</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Centrum</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>centrum</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFC8BE</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Cultuur en ontspanning</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>cultuur en ontspanning</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF3C82</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Detailhandel</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>detailhandel</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFA096</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Dienstverlening</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>dienstverlening</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#F091BE</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Gemengd</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>gemengd</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFBE87</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Groen</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>groen</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#28C846</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Horeca</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>horeca</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FF6923</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Kantoor</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>kantoor</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#EBC3D7</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Maatschappelijk</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>maatschappelijk</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#DC9B78</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Natuur</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>natuur</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#82A591</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Recreatie</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>recreatie</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#B9D746</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Sport</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>sport</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#82C846</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Tuin</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>tuin</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#C8D76E</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Verkeer</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>verkeer</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#CDCDCD</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Water</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>water</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#AFCDE1</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Wonen</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>wonen</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFFF00</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Woongebied</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>woongebied</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#FFFFB4</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>Overig</Name>
+					<Filter>
+						<PropertyIsEqualTo>
+							<PropertyName>bestemmingshoofdgroep</PropertyName>
+							<Literal>overig</Literal>
+						</PropertyIsEqualTo>
+					</Filter>
+					<PolygonSymbolizer>
+						<Geometry>
+							<PropertyName>geometrie</PropertyName>
+						</Geometry>
+						<Fill>
+							<SvgParameter name="fill">#EBE1EB</SvgParameter>
+							<SvgParameter name="fill-opacity">1.0</SvgParameter>
+						</Fill>
+						<Stroke>
+							<SvgParameter name="stroke">#000000</SvgParameter>
+							<SvgParameter name="stroke-width">2.0</SvgParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle> 
+		</UserStyle>
+	</NamedLayer>
+</StyledLayerDescriptor>
